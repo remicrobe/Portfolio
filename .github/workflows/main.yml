@@ -39,3 +39,4 @@ jobs:
           server: ftp.remi-weil.fr
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
+          local-dir: .output/public/   # Le chemin local à synchroniser
