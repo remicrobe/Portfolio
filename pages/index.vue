@@ -5,7 +5,7 @@
       data-aos-duration="1000"
   >
     <v-col md="6" cols="12" class="text-center">
-      <v-img class="mr-5 ml-5 mt-5" src="/img/remi.png"></v-img>
+      <v-img class="mr-5 ml-5 mt-5" max-height="450" src="/img/remi.png"></v-img>
     </v-col>
 
     <v-col md="6" cols="12" class="align-center mt-md-15">
@@ -437,6 +437,16 @@ let projects = [
     img: "sncflogo.jpg",
     doclink: "https://docs.google.com/document/d/1b8pjG4gaxgtI9wzr9Apvqan6qd0uVN0zm320GKXEQcU/edit?usp=sharing",
     skills: ["Delphi", "Python", "Pic32MZ", "C++"]
+  },
+  {
+    title: "Portfolio",
+    description: {
+      FR: "Un projet visant à démontrer mes capacités à développer un site web et à le mettre en production très rapidement, tout en exposant mes compétences.",
+      EN: "A project aimed at demonstrating my ability to develop a website and deploy it very quickly, while showcasing my skills."
+    },
+    img: "portfolio.png",
+    link: "https://github.com/remicrobe/Portfolio",
+    skills: ["Github", "CI/CD", "Vue", "Vuetify", "Nuxt"]
   }
 ]
 
