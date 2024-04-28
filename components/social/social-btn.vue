@@ -2,6 +2,7 @@
   <v-btn
       v-for="social in socialNetwork"
       :href="social.link"
+      target="_blank"
       color="#669db3"
       variant="outlined"
       class="mr-5 mt-2"

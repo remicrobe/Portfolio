@@ -34,6 +34,7 @@
             :text="t('seeongit')"
             variant="outlined"
             :href="project.link"
+            target="_blank"
         ></v-btn>
 
         <v-btn
