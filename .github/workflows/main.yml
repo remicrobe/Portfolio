@@ -1,0 +1,41 @@
+name: Build and deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Construction du portfolio
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@main
+      - name: Installation des dépendances
+        run: npm ci
+      - name: Construction des dépendances
+        run: npm run generate
+      - name: Archivage de l'artifact de production
+        uses: actions/upload-artifact@main
+        with:
+          name: dist
+          path: .output/public   # Le chemin du dossier à archiver
+
+  deploy:
+    name: Déploiement
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Téléchargement de l'artifact
+        uses: actions/download-artifact@main
+        with:
+          name: dist
+          path: .output/public   # Le chemin où l'artifact doit être téléchargé
+      - name: Synchronisation des fichiers
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.remi-weil.fr
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
