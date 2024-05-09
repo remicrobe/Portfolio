@@ -130,8 +130,15 @@ const theme = useTheme()
 useHead({
   title: 'WEIL Rémi - Developer',
   meta: [
-    {name: 'description', content: 'A small portfolio of an software engeneer.'}
+    {name: 'description', content: 'A small portfolio of an software engineer.'}
   ]
+})
+
+useSeoMeta({
+  title: 'Portfolio - WEIL Rémi',
+  ogTitle: 'Portfolio - WEIL Rémi',
+  description: 'A small portfolio of an software engineer.',
+  ogDescription: 'A small portfolio of an software engineer.',
 })
 
 let socialNetwork = ref([
