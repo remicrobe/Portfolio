@@ -36,7 +36,7 @@ jobs:
       - name: Synchronisation des fichiers
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: 77.221.143.82
+          server: 91.216.107.49
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           local-dir: .output/public/   # Le chemin local à synchroniser
