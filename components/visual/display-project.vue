@@ -45,6 +45,13 @@
             :href="project.doclink"
         ></v-btn>
 
+          <v-btn
+              v-if="project.url"
+              color="#669db3"
+              :text="t('seeonweb')"
+              variant="outlined"
+              :href="project.url"
+          ></v-btn>
         <v-spacer></v-spacer>
 
       </v-card-actions>
