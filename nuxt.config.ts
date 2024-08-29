@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify());
       });
     },
+    'nuxt-aos',
     '@nuxtjs/i18n'],
   devtools: {enabled: true},
   ssr: false,

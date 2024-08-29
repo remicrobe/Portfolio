@@ -94,7 +94,7 @@
         id="portfolio"
         :style="'background-color:' + theme.current.value.colors.secondary"
 
-        class="mt-10 pb-15"
+        class="mt-10 pb-15 ma-3"
     >
         <v-col md="12" cols="12" class="text-center">
             <v-container>
@@ -406,14 +406,14 @@ let typeSkills = [
 
 let projects = [
     {
-        title: "ACCESSLink",
+        title: "ACCESS",
         description: {
             FR: "Un projet destiné à gérer les entrées sorties des employés d'une société tierce et de pouvoir gérer leurs temps de travail afin de faciliter le travail des RH.",
             EN: "A project aimed at managing the in and out of employees of a third-party company and managing their working hours to facilitate the work of HR."
         },
-        img: "access.png",
+        img: "access.jpg",
         link: "https://github.com/remicrobe/ACCESS",
-        skills: [ "Raspberry", "JS", "Vuetify", "Vue", "Express", "ReactNative", "MySQL" ]
+        skills: [ "Raspberry", "JS", "Vuetify", "Vue", "Express", "React", "MySQL" ]
     },
     {
         title: "Split",
@@ -423,7 +423,7 @@ let projects = [
         },
         img: "split.jpg",
         url: "https://split-app.fr",
-        skills: [ "Collaboration", "Vue", "Ionic", "Android", "Play Store", "Express", "MariaDB" ]
+        skills: [ "Vue", "Ionic", "Android", "Play Store", "Express" ]
     },
     {
         title: "HappyEAT API",
@@ -461,7 +461,7 @@ let projects = [
             FR: "Un projet visant à démontrer mes capacités à développer un site web et à le mettre en production très rapidement, tout en exposant mes compétences.",
             EN: "A project aimed at demonstrating my ability to develop a website and deploy it very quickly, while showcasing my skills."
         },
-        img: "portfolio.png",
+        img: "portfolio.jpg",
         link: "https://github.com/remicrobe/Portfolio",
         skills: [ "Github", "CI/CD", "Vue", "Vuetify", "Nuxt" ]
     }
